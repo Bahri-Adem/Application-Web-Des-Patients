@@ -28,7 +28,7 @@ Facilité la vie des patients et ne plus les surcharger par un grand nombre de d
         <tr>
             <td>HTML</td>
             <td>Java EE (Tomcat server,Servlet,Jsp,MVC,DAO,JUnit)</td>
-            <td><a href=https://www.planttext.com/">planttext</a></td>
+            <td><a href="https://sparxsystems.com/">Enterprise Architect</a></td>
              <td>Git/Github</td>
         </tr>
         <tr>

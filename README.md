@@ -51,3 +51,45 @@ Facilité la vie des patients et ne plus les surcharger par un grand nombre de d
         </tr>
     </tbody>
 </table>
+
+---
+
+
+### **Interfaces de l'application**
+* **Accueil**
+  
+ ![](screenshots/accueil.png)
+
+* **Inscription**
+
+![](screenshots/register.png)
+
+* **Authentification**
+
+![](screenshots/login.png)
+
+* **Tableau de bord de docteur**
+
+![](screenshots/dashboard-doctor.png)
+
+* **Liste des patients**
+
+![](screenshots/patients.png)
+
+* **Dossier médical du patient**
+
+![](screenshots/medicalFile.png)
+![](screenshots/lists-appointments-consultaions.png)
+
+* **Ajouter une consultation par le docteur**
+
+![](screenshots/add-consultations.png)
+
+* **Accueil du patient**
+
+![](screenshots/home-patients.png)
+
+
+* **Prendre un rendez-vous par le patient**
+
+![](screenshots/take-appointment.png)

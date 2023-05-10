@@ -35,13 +35,13 @@ Facilité la vie des patients et ne plus les surcharger par un grand nombre de d
             <td>CSS</td>
             <td>MySQL (SGBD)</td>
             <td></td>
-              <td>Docker</td>
+              <td>JUnit</td>
         </tr>
          <tr>
             <td>Javascript</td>
             <td></td>
             <td></td>
-              <td>Docker-composer</td>
+              <td>Docker</td>
         </tr>
         <tr>
             <td>Bootstrap</td>

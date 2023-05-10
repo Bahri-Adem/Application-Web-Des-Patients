@@ -1,0 +1,100 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.HashMap;
+
+import com.javaBeans.MedicalFile;
+import com.javaBeans.Patient;
+
+public class MedicalFileDAO implements MedicaleFileService {
+	private DbConfigDAO dbInstance;
+	private Connection connection;
+
+	public MedicalFileDAO() {
+		dbInstance = DbConfigDAO.getInstance();
+		try {
+			connection = dbInstance.getConnection();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public MedicalFile getMedicalFileById(int id_patient) throws SQLException {
+		MedicalFile medicalFile = new MedicalFile();
+		PatientDAO patientDao = new PatientDAO();
+		Patient patient = patientDao.getPatientById(id_patient);
+		medicalFile.setPatient(patient);
+		String id = "" + patient.getFirstName().substring(0, 1) + patient.getLastName().substring(0, 1) + "-"
+				+ patient.getBirthDate();
+		medicalFile.setId(id);
+		AppointmentDAO appointmentDao = new AppointmentDAO();
+		medicalFile.setAppointmentList(appointmentDao.getAllAppointmentById(id_patient));
+		ConsultationDAO consultationDao = new ConsultationDAO();
+		medicalFile.setConsultationList(consultationDao.getAllConsultationById(id_patient));
+		ResultatDAO resultatDAO = new ResultatDAO();
+		medicalFile.setResultatsList(resultatDAO.getAllResultatById(id_patient));
+		RadiographieDAO radioDao = new RadiographieDAO();
+		medicalFile.setRadioList(radioDao.getAllRadiographieById(id_patient));
+		VenteDAO venteDao = new VenteDAO();
+		medicalFile.setVenteList(venteDao.getAllVenteByIdPatient(id_patient));
+		SejourDAO sejourDao = new SejourDAO();
+		medicalFile.setSejourList(sejourDao.getAllSejourById(id_patient));;
+		medicalFile.setStatistiques(getStatistiquesById(id_patient));
+		return medicalFile;
+	}
+
+	public HashMap<String, String> getStatistiquesById(int id_patient) throws SQLException {
+		connection = dbInstance.getConnection();
+		HashMap<String, String> statistiques = new HashMap<String, String>();
+		PreparedStatement preStat;
+		ResultSet result;
+		//
+		String query1 = "SELECT COUNT(*) FROM appointment WHERE id_patient = ?";
+		preStat = connection.prepareStatement(query1);
+		preStat.setInt(1, id_patient);
+		result = preStat.executeQuery();
+		result.next();
+		int nbapp = result.getInt("COUNT(*)");
+
+		statistiques.put("appointments", String.valueOf(nbapp));
+		preStat.close();
+		//
+		String query2 = "SELECT COUNT(*) FROM consultation WHERE id_patient = ?";
+		preStat = connection.prepareStatement(query2);
+		preStat.setInt(1, id_patient);
+		result = preStat.executeQuery();
+		result.next();
+		int nbcons = result.getInt(1);
+
+		statistiques.put("consultations", String.valueOf(nbcons));
+		preStat.close();
+		//
+		String query3 = "SELECT COUNT(*) FROM consultation WHERE id_patient = ? and id_prescription is NOT NULL";
+		preStat = connection.prepareStatement(query3);
+		preStat.setInt(1, id_patient);
+		result = preStat.executeQuery();
+		result.next();
+		int nbpresc = result.getInt("COUNT(*)");
+		preStat.close();
+
+		statistiques.put("prescriptions", String.valueOf(nbpresc));
+		preStat.close();
+		//
+		String query4 = "SELECT SUM(price) FROM consultation WHERE id_patient = ?";
+		preStat = connection.prepareStatement(query4);
+		preStat.setInt(1, id_patient);
+		result = preStat.executeQuery();
+		result.next();
+		double totalPrice = result.getDouble(1);
+
+		statistiques.put("price", String.valueOf(totalPrice));
+		preStat.close();
+
+		return statistiques;
+	}
+
+}

@@ -114,7 +114,7 @@ Facilité la vie des patients et ne plus les surcharger par un grand nombre de d
 
 * **Accueil du Pharmacie**
 
-![tableaudebordPharmacie](https://github.com/Bahri-Adem/application-web-qui-centralise-les-donn-es-des-patients/assets/103949052/dcfd9f20-7c01-428f-8ca2-25a8bc88c54b)
+![AcceuilPharmacie](https://github.com/Bahri-Adem/application-web-qui-centralise-les-donn-es-des-patients/assets/103949052/483d2c92-1780-424e-8ca1-f9c9d128604d)
 
 * **Liste des prescriptions non Vendus par la Pharmacie**
 
@@ -138,7 +138,7 @@ Facilité la vie des patients et ne plus les surcharger par un grand nombre de d
 
 * **Accueil du centre de Radiologie**
 
-![tableaudebordCentreRadiologie](https://github.com/Bahri-Adem/application-web-qui-centralise-les-donn-es-des-patients/assets/103949052/094939d0-d18c-4875-b155-bc21168b05de)
+![acceuilRadiographie](https://github.com/Bahri-Adem/application-web-qui-centralise-les-donn-es-des-patients/assets/103949052/74f5091f-aaf0-4cee-908f-704100560434)
 
 * **Listes des Radiographies**
 

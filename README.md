@@ -73,6 +73,7 @@ Facilité la vie des patients et ne plus les surcharger par un grand nombre de d
 
 * **Tableau de bord de docteur**
 
+![acceuiDocteur](https://github.com/Bahri-Adem/application-web-qui-centralise-les-donn-es-des-patients/assets/103949052/511e9b62-91ca-4ca6-b28b-1b5c97869cbb)
 
 * **Liste des patients**
 

@@ -1,4 +1,4 @@
-# application web qui centralise les données des patients
+# Application web qui centralise les données des patients
 
 #### **Contributeurs :**
 Ce projet a été réalisé sous la collaboration de :

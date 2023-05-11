@@ -121,6 +121,7 @@ Facilité la vie des patients et ne plus les surcharger par un grand nombre de d
 ![prescreptionnonVendu](https://github.com/Bahri-Adem/application-web-qui-centralise-les-donn-es-des-patients/assets/103949052/bb1a62cd-c25b-448c-82e5-42b0c82a6795)
 
 * **Liste des prescriptions Vendus par la Pharmacie**
+
 ![prescreptionVendu](https://github.com/Bahri-Adem/application-web-qui-centralise-les-donn-es-des-patients/assets/103949052/3a512b4e-2970-49f5-baf1-6eb0a3061b1d)
 
 * **Accueil du Clinique**
@@ -128,6 +129,7 @@ Facilité la vie des patients et ne plus les surcharger par un grand nombre de d
 ![tableaudebordClinique](https://github.com/Bahri-Adem/application-web-qui-centralise-les-donn-es-des-patients/assets/103949052/b8312682-7ac9-46f8-a12c-47f84d9d7ff1)
 
 * **Liste des Sejours**
+
 ![ListSejour](https://github.com/Bahri-Adem/application-web-qui-centralise-les-donn-es-des-patients/assets/103949052/549898dc-ed16-4904-990f-a434d2062672)
 
 * **Ajouter un sejour par le Clinique**

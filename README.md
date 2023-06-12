@@ -12,7 +12,7 @@ Ce projet a été réalisé sous la collaboration de :
 
 ---
 ### **Objectif du projet:**
-Facilité la vie des patients et ne plus les surcharger par un grand nombre de documents médicaux sous support papier, par un grand nombre de déplacement entre les intervenants au niveau de leurs soins médicaux, etc).
+Faciliter la vie des patients et ne plus les surcharger par un grand nombre de documents médicaux sous support papiers, par un grand nombre de déplacements entre les intervenants au niveau de leurs soins médicaux, etc).
 
 ---
 ### **Outils de développement**

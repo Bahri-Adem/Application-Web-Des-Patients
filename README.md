@@ -1,13 +1,7 @@
 # Application web qui centralise les données des patients
 
-#### **Contributeurs :**
-Ce projet a été réalisé sous la collaboration de :
-  
-  * [Bahri Adem ](https://github.com/Bahri-Adem)
-  * [Bouchnak Maher](https://github.com/Bouchnak-Maher)
-  * [Mabrouk Mohamed Wadhah](https://github.com/WadhahMabrouk)
-
 #### **Supervisé par** 
+Ce projet a été réalisé sous la supervision de :
 * Dr.Kannoun Slim
 
 ---
